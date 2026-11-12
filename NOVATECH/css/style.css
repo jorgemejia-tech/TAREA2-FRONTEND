@@ -1,0 +1,314 @@
+/* ============================================
+   NOVATECH - Hoja de estilos general
+   ============================================ */
+
+/* 1. ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #eef2f7;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* 2. ENCABEZADOS */
+h1, h2, h3 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 26px;
+    color: #ffffff;
+    background-color: #0b3d91;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: #0b3d91;
+    margin: 10px 0 5px;
+}
+
+.titulo-pagina {
+    color: #0b3d91;
+    text-align: center;
+}
+
+/* CABECERA Y MENÚ */
+.cabecera {
+    background-color: #0b3d91;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #ff9800;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+/* 4. ELEMENTOS DE NAVEGACIÓN */
+.menu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #ffffff;
+    background-color: #1565c0;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0 4px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+/* PORTADA */
+.portada {
+    background-color: #1565c0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portada p {
+    color: #e3f2fd;
+    font-size: 20px;
+}
+
+/* 3. BORDES - Descripción */
+.descripcion {
+    background-color: #ffffff;
+    border: 3px solid #1565c0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.descripcion h2 {
+    margin-top: 0;
+}
+
+/* 5. PRODUCTOS Y SERVICIOS */
+section {
+    margin-bottom: 30px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    width: 300px;
+    border: 2px solid #0b3d91;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0b3d91;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.tarjeta p {
+    color: #555555;
+    font-size: 15px;
+    margin: 0;
+}
+
+.tarjeta:hover {
+    border-color: #ff9800;
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: #ffffff;
+    border: 3px dashed #ff9800;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.contacto li {
+    padding: 6px 0;
+}
+
+/* 6. FORMULARIOS */
+.formulario {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 2px solid #0b3d91;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    background-color: #0b3d91;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+label,
+.etiqueta {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    color: #0b3d91;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #90a4ae;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fafafa;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ff9800;
+    background-color: #fff8e1;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-color: #2e7d32;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #c62828;
+}
+
+.opciones label {
+    display: inline-block;
+    margin-right: 18px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.btn-registrar {
+    background-color: #2e7d32;
+    color: #ffffff;
+}
+
+.btn-registrar:hover {
+    background-color: #1b5e20;
+}
+
+.btn-limpiar {
+    background-color: #c62828;
+    color: #ffffff;
+}
+
+.btn-limpiar:hover {
+    background-color: #8e0000;
+}
+
+/* 7. PIE DE PÁGINA */
+.pie {
+    background-color: #0b3d91;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #ff9800;
+}
+
+.pie a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
